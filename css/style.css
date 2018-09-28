@@ -105,15 +105,22 @@ header .top_bar .wrapper {
 }
 
 /*Slider*/
+section.slider {
+    overflow: hidden;
+}
 section.slider .homepage_slider {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
+    cursor: pointer;
+    margin-right: -20px;
 }
 
 section.slider .homepage_slider .item-slide {
-    width: calc(33.3333% - 13px);
+    /* width: calc(33.3333% - 13px); */
+    margin-right: 20px;
     position: relative;
 }
+
 section.slider .homepage_slider .item-slide .mask {
     position: absolute;
     top: 0;
@@ -156,6 +163,7 @@ section.slider .homepage_slider .item-slide .mask h2.title {
 section.slider .homepage_slider .item-slide img {
     max-width: 100%;
     height: auto;
+    display: block;
 }
 
 /*Main*/
@@ -364,6 +372,86 @@ aside {
     display: inline-block;
     margin-top: 33px;
 }
+
+.widget_popular_posts .line_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.widget_popular_posts .line_title {
+    font-family: 'Cabin', sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.15em;
+    color: #262626;
+    margin-bottom: 30px;
+}
+.widget_popular_posts .line_title h3.widget_title {
+    padding-right: 24px;
+    padding-left: 24px;
+}
+.widget_popular_posts .line_title .line {
+    flex-grow: 1;
+    height: 1px;
+    background: #e7e7e7;
+}
+
+.list_posts .post {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.list_posts .post .img_holder {
+    position: relative;
+}
+.list_posts .post .img_holder .number {
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    color: #262626;
+    font-size: 10px;
+    font-family: 'Cabin', sans-serif;
+    text-align: center;
+    line-height: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.list_posts .post .post_data {
+    padding-top: 11px;
+    padding-left: 19px;
+}
+
+.list_posts .post .post_data h4 {
+    color: #262626;
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 14px;
+    font-family: 'Lato', sans-serif;
+}
+
+.list_posts .post .post_data span.date {
+    color: #a5a5a5;
+    font-size: 11px;
+    line-height: 11px;
+    display: block;
+    letter-spacing: 0.1em;
+    font-family: 'Cabin', sans-serif;
+    text-transform: uppercase;
+}
+
+/* .sidebar .widget .widget_advertising figure {
+    position: relative;
+}
+.sidebar .widget widget_advertising figure figcaption {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+} */
 
 /*Footer*/
 .footer .insta_feed {
